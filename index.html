@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeSpoke Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link rel="stylesheet" href="text scroll animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#"><img src="mainlogo.jpg" alt="Logo"></a>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-links">
+            <li><a href="#home" id="home-button"><i class="fas fa-home" ></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+                <div class="dropdown-content">
+                    <a href="#cyber-security" id="cyber-button"><i class="fas fa-shield-alt" ></i> Cyber Security</a>
+                    <a href="#health-safety" id="health-button"><i class="fas fa-first-aid"></i> Health & Safety Compliance</a>
+                    <a href="#business-consultancy" id="business-button"><i class="fas fa-briefcase"></i> Business Consultancy</a>
+                </div>
+            </li>
+            <li><a href="#case-studies"><i class="fas fa-folder-open"></i> Case Studies</a></li>
+            <li><a href="#blogs"><i class="fas fa-blog"></i> Blog</a></li>
+            <li class="dropdown">
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                <div class="dropdown-content">
+                    <a href="#skyward-journey"><i class="fas fa-rocket"></i> Skyward Journey</a>
+                    <a href="#velvet-compass"><i class="fas fa-compass"></i> Velvet Compass</a>
+                    <a href="#ember-collective"><i class="fas fa-fire"></i> Ember Collective</a>
+                </div>
+            </li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#get-quote" class="contact-btn" id="contact-btnn"><i class="fas fa-paper-plane"></i> Get a Quote</a></li>
+        </ul>
+        
+
+        <!-- Hamburger -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+<!-- HOME SECTION -->
+ <section class="home-section">
+<div class="hero-slider">
+ 
+
+  <!-- Slide 1: Cybersecurity -->
+  <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1548092372-0d1bd40894a3?q=80&w=2070&auto=format&fit=crop');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Cybersecurity & Protection</h1>
+      <p>Defend your digital infrastructure with real-time monitoring, proactive threat analysis, and expert protection.</p>
+      <a href="#" class="hero-btn">Secure Your Systems</a>
+    </div>
+  </div>
+
+   <!-- Slide 2: Health & Safety Compliance -->
+   <div class="hero-slide active" style="background-image: url('https://www.notifytechnology.com/wp-content/uploads/2023/10/Health-_-Safety-in-Construction-%E2%80%93-Risk-Assessments-_-Method-Statements-Header-1024x683.webp');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Health & Safety Compliance</h1>
+      <p>Ensure safety standards and compliance with expert risk management strategies tailored for your workplace.</p>
+      <a href="#" class="hero-btn">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Slide 3: Business Consultancy -->
+  <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1562564055-71e051d33c19?w=600&auto=format&fit=crop');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Business Consultancy</h1>
+      <p>Streamline your operations, reduce inefficiencies, and scale smarter with our expert-led business consulting.</p>
+      <a href="#" class="hero-btn">Explore Solutions</a>
+    </div>
+  </div>
+
+  <!-- Navigation Dots -->
+  <div class="hero-dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+</div>
+
+
+
+
+<!-- home services -->
+      <section class="services">
+        <div class="services-header" data-aos="fade-down">
+          <h2>Our Services</h2>
+          <p>Driving your business forward with secure, compliant, and expert solutions.</p>
+        </div>
+      
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 id="services-home">Cyber Security</h3>
+            <p id="para-home">Protecting your organization against evolving digital threats with proactive defense systems.</p>
+            <a href="#">Protect Now</a>
+          </div>
+      
+          <!-- Service 2 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-hard-hat"></i></div>
+            <h3 id="services-home">Health & Safety Compliance</h3>
+            <p id="para-home">Ensuring your workplace meets modern safety standards and legal compliance effortlessly.</p>
+            <a href="#">Stay Compliant</a>
+          </div>
+      
+          <!-- Service 3 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h3 id="services-home">Business Consultancy</h3>
+            <p id="para-home">Expert guidance to optimize operations, streamline growth, and achieve strategic goals.</p>
+            <a href="#">Consult with Us</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- home testimonals -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 data-aos="fade-down">What Our Clients Say</h2>
+      
+        <div class="swiper testimonial-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+      
+            <div class="swiper-slide testimonial-card" id="testi-grab">
+              <div class="card-content">
+                <p>“BTSys UK transformed our cybersecurity. We're finally secure and confident in our digital landscape.”</p>
+                <div class="client-info">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James">
+                  <div>
+                    <h4>James Walters</h4>
+                    <span>CTO, FinCorp</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-slide testimonial-card" id="testi-grab">
+              <div class="card-content">
+                <p>“Passed every safety audit easily. BTSys UK made compliance smooth and stress-free. Total professionals!”</p>
+                <div class="client-info">
+                  <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Linda">
+                  <div>
+                    <h4>Linda Mason</h4>
+                    <span>HR Manager, GreenBuild</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-slide testimonial-card" id="testi-grab">
+              <div class="card-content">
+                <p>“Business consultancy from BTSys UK changed our strategy. We're growing faster and smarter than ever!”</p>
+                <div class="client-info">
+                  <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="David">
+                  <div>
+                    <h4>David King</h4>
+                    <span>Founder, King Solutions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      
+
+      <!-- why choose us home -->
+      <section class="why-choose-us">
+        <div class="left-section">
+          <h2>Why Choose BTSys UK?</h2>
+          <p class="description">
+            Discover what makes us the preferred partner for innovative, secure, and compliant solutions.
+          </p>
+          <a href="#contact" class="cta-btn1">Get in Touch</a>
+        </div>
+        <div class="right-section">
+          <div class="reasons">
+            <div class="reason-box">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Proven Security</h3>
+              <p>Top-notch cyber defense solutions to protect your systems.</p>
+            </div>
+            <div class="reason-box">
+              <i class="fas fa-user-shield"></i>
+              <h3>Certified Compliance</h3>
+              <p>Experts in ensuring full Health & Safety compliance.</p>
+            </div>
+            <div class="reason-box">
+              <i class="fas fa-chart-line"></i>
+              <h3>Strategic Guidance</h3>
+              <p>Grow smart with tailored consultancy that drives results.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+     
+
+      
+      
+  
+      <section class="achievements-section">
+        <div class="achievements-header">
+            <h2 class="section-title">Our Achievements</h2>
+            <a href="#contact" class="cta-btn" id="get-in">Let's Talk Business</a>
+        </div>
+        <div class="achievements-container">
+            <div class="achievements-info">
+                <div class="achievement-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Clients Icon" />
+                    <h3 class="counter" data-target="200">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Projects Icon" />
+                    <h3 class="counter" data-target="350">0</h3>
+                    <p>Successful Projects</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png" alt="Years Icon" />
+                    <h3 class="counter" data-target="10">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Certifications Icon" />
+                    <h3 class="counter" data-target="25">0</h3>
+                    <p>Certifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+
+    <section class="case-studies">
+        <h2 class="section-title">Real Success Stories</h2>
+        <div class="case-studies-container">
+      
+          <!-- Cyber Security -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="fas fa-shield-virus"></i>
+                <h3>Cyber Attack Response</h3>
+                <p>A firm was breached and risked losing sensitive client data.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>How We Solved It</h3>
+                <p>We deployed 24/7 threat monitoring and zero-trust architecture—cutting attack risk by 90%.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Health & Safety Compliance -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="fas fa-user-check"></i>
+                <h3>Compliance Audit Gap</h3>
+                <p>Warehouse operations faced shutdown due to outdated safety policies.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Our Intervention</h3>
+                <p>We ensured H&S compliance with complete documentation & team-wide training.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Business Consultancy -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fas fa-chart-line"></i> <!-- replaced with a valid icon -->
+                    <h3>Scaling Challenges</h3>
+                    <p>A startup faced revenue stagnation and lacked a clear strategy.</p>
+                  </div>
+                  
+              <div class="flip-card-back">
+                <h3>Our Strategy</h3>
+                <p>We delivered a growth roadmap, increasing revenue by 60% and customer retention by 45%.</p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      
+
+      
+      <section class="cta">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Business?</h2>
+          <p>Take the first step toward a brighter, more secure future with BTSys UK. Let's start working together today.</p>
+          <a href="#contact" class="cta-btn" id="home-cta">Get Started</a>
+        </div>
+      </section>
+      
+
+    </section>
+      
+    <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
+
+
+
+
+
+
+<!-- cyber security section -->
+<section id="cybersecurity" class="cs-section">
+
+  <section class="cs-hero">
+    <div class="cs-hero-overlay"></div>
+    <div class="cs-hero-content">
+      <h1><span>Secure</span> Your Digital Future with <br>Industry-Leading Cybersecurity Solutions</h1>
+      <p>We protect your business from cyber threats with proactive, AI-driven strategies. Safeguard your digital assets with experts who care.</p>
+      <button class="cta-button">🚀 Get Your Free Security Audit</button>
+    </div>
+  </section>
+  
+  
+
+<!-- cyber excellence -->
+  <h2 class="cs-heading">Cybersecurity Excellence</h2>
+  <p class="cs-subtext">Defend your business with a multi-layered security approach tailored to modern threats.</p>
+
+  <div class="cs-tabs">
+    <button class="cs-tab-btn cs-active" data-tab="cs-network">Network Protection</button>
+    <button class="cs-tab-btn" data-tab="cs-endpoint">Endpoint Security</button>
+    <button class="cs-tab-btn" data-tab="cs-cloud">Cloud Security</button>
+    <button class="cs-tab-btn" data-tab="cs-audit">Vulnerability Audits</button>
+  </div>
+
+  <div id="cs-network" class="cs-tab-content cs-active">
+    <p><i class="fas fa-shield-alt"></i> We secure your internal and external networks using advanced firewalls, intrusion detection, and zero-trust policies.</p>
+  </div>
+  <div id="cs-endpoint" class="cs-tab-content">
+    <p><i class="fas fa-laptop-code"></i> From employee devices to company servers, we monitor and protect all endpoints in real time.</p>
+  </div>
+  <div id="cs-cloud" class="cs-tab-content">
+    <p><i class="fas fa-cloud"></i> Our cloud-native security ensures your SaaS, IaaS, and PaaS platforms are protected from data breaches and misconfigurations.</p>
+  </div>
+  <div id="cs-audit" class="cs-tab-content">
+    <p><i class="fas fa-search"></i> We uncover risks with deep audits, red-team simulations, and automated vulnerability scanning.</p>
+  </div>
+
+
+  <!-- stats cyber page -->
+  <div class="cs-stats">
+    <div class="cs-stat-box">
+      <div class="cs-stat-icon"><i class="fas fa-lock"></i></div>
+      <div class="cs-stat-value">500+</div>
+      <div class="cs-stat-label">Systems Secured</div>
+    </div>
+    <div class="cs-stat-box">
+      <div class="cs-stat-icon"><i class="fas fa-chart-line"></i></div>
+      <div class="cs-stat-value">99.99%</div>
+      <div class="cs-stat-label">Threat Detection Accuracy</div>
+    </div>
+    <div class="cs-stat-box">
+      <div class="cs-stat-icon"><i class="fas fa-headset"></i></div>
+      <div class="cs-stat-value">24/7</div>
+      <div class="cs-stat-label">Support & Monitoring</div>
+    </div>
+    <div class="cs-stat-box">
+      <div class="cs-stat-icon"><i class="fas fa-bug-slash"></i></div>
+      <div class="cs-stat-value">0</div>
+      <div class="cs-stat-label">Critical Incidents</div>
+    </div>
+  </div>
+<!-- Top Cyber Threats & Solutions -->
+<div class="cs-threats-container">
+  <h2 class="cs-subheading">Top Cybersecurity Challenges & Solutions</h2>
+  <div class="cs-threats-grid">
+    <div class="cs-threat-card">
+      <div class="cs-icon">🎣</div>
+      <h3>Phishing Attacks</h3>
+      <p class="cs-threat-problem"><strong>Problem:</strong> Deceptive emails tricking users into revealing credentials.</p>
+      <p class="cs-threat-impact"><strong>Impact:</strong> Account compromise, data loss, financial theft.</p>
+      <p class="cs-threat-solution"><strong>Solution:</strong> Security awareness training and email filters.</p>
+    </div>
+
+    <div class="cs-threat-card">
+      <div class="cs-icon">💰</div>
+      <h3>Ransomware</h3>
+      <p class="cs-threat-problem"><strong>Problem:</strong> Malicious software locks systems until ransom is paid.</p>
+      <p class="cs-threat-impact"><strong>Impact:</strong> Operational disruption, financial loss, data breach.</p>
+      <p class="cs-threat-solution"><strong>Solution:</strong> Regular backups, endpoint protection, rapid response plans.</p>
+    </div>
+
+    <div class="cs-threat-card">
+      <div class="cs-icon">🧑‍💼</div>
+      <h3>Insider Threats</h3>
+      <p class="cs-threat-problem"><strong>Problem:</strong> Employees misusing access intentionally or accidentally.</p>
+      <p class="cs-threat-impact"><strong>Impact:</strong> Data leaks, sabotage, regulatory violations.</p>
+      <p class="cs-threat-solution"><strong>Solution:</strong> Access control, monitoring, and training.</p>
+    </div>
+
+    <div class="cs-threat-card">
+      <div class="cs-icon">🐞</div>
+      <h3>Zero-Day Vulnerabilities</h3>
+      <p class="cs-threat-problem"><strong>Problem:</strong> Exploited bugs before vendors can fix them.</p>
+      <p class="cs-threat-impact"><strong>Impact:</strong> Unauthorized access, rapid spread of malware.</p>
+      <p class="cs-threat-solution"><strong>Solution:</strong> Threat intelligence, patch management, WAFs.</p>
+    </div>
+
+    <div class="cs-threat-card">
+      <div class="cs-icon">🔗</div>
+      <h3>Third-Party Risk</h3>
+      <p class="cs-threat-problem"><strong>Problem:</strong> Vendors and partners introducing vulnerabilities.</p>
+      <p class="cs-threat-impact"><strong>Impact:</strong> Supply chain breaches, data compromise.</p>
+      <p class="cs-threat-solution"><strong>Solution:</strong> Vendor risk assessments and continuous monitoring.</p>
+    </div>
+
+    <div class="cs-threat-card">
+      <div class="cs-icon">🌐</div>
+      <h3>DDoS Attacks</h3>
+      <p class="cs-threat-problem"><strong>Problem:</strong> Overwhelming servers with traffic to disrupt service.</p>
+      <p class="cs-threat-impact"><strong>Impact:</strong> Website downtime, loss of revenue, poor user trust.</p>
+      <p class="cs-threat-solution"><strong>Solution:</strong> Load balancing, traffic filtering, DDoS mitigation services.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="cs-flip-section">
+  <h2 class="cs-subheading">Explore Key Cybersecurity Threats</h2>
+
+  <div class="cs-flip-grid">
+
+    <!-- CARD 1 -->
+    <div class="cs-flip-card">
+      <div class="cs-flip-inner">
+        <div class="cs-flip-front">
+          <img src="https://cdn-icons-png.flaticon.com/512/9019/9019603.png" alt="Phishing Icon">
+          <h3>Phishing</h3>
+        </div>
+        <div class="cs-flip-back">
+          <h4>Phishing Attack</h4>
+          <p><strong>Problem:</strong> Deceptive emails and fake sites.</p>
+          <p><strong>Impact:</strong> Credential theft, financial loss.</p>
+          <p><strong>Solution:</strong> Awareness training, filters.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="cs-flip-card">
+      <div class="cs-flip-inner">
+        <div class="cs-flip-front">
+          <img src="https://cdn-icons-png.flaticon.com/512/10058/10058090.png" alt="Ransomware Icon">
+          <h3>Ransomware</h3>
+        </div>
+        <div class="cs-flip-back">
+          <h4>Data Lockdown</h4>
+          <p><strong>Problem:</strong> Encrypts your files, demands ransom.</p>
+          <p><strong>Impact:</strong> System failure, loss of access.</p>
+          <p><strong>Solution:</strong> Regular backups, strong endpoint security.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="cs-flip-card">
+      <div class="cs-flip-inner">
+        <div class="cs-flip-front">
+          <img src="https://cdn-icons-png.flaticon.com/512/5910/5910336.png" alt="DDoS Icon">
+          <h3>DDoS</h3>
+        </div>
+        <div class="cs-flip-back">
+          <h4>Service Disruption</h4>
+          <p><strong>Problem:</strong> Floods traffic to crash systems.</p>
+          <p><strong>Impact:</strong> Downtime, loss of revenue.</p>
+          <p><strong>Solution:</strong> Load balancing, DDoS protection services.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="cs-flip-card">
+      <div class="cs-flip-inner">
+        <div class="cs-flip-front">
+          <img src="https://cdn-icons-png.flaticon.com/512/6553/6553561.png" alt="Malware Icon">
+          <h3>Malware</h3>
+        </div>
+        <div class="cs-flip-back">
+          <h4>System Infection</h4>
+          <p><strong>Problem:</strong> Infects devices to spy or destroy data.</p>
+          <p><strong>Impact:</strong> Data loss, slowed systems.</p>
+          <p><strong>Solution:</strong> Antivirus software, patch updates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="cs-flip-card">
+      <div class="cs-flip-inner">
+        <div class="cs-flip-front">
+          <img src="https://cdn-icons-png.flaticon.com/512/2920/2920042.png" alt="Insider Threat Icon">
+          <h3>Insider Threats</h3>
+        </div>
+        <div class="cs-flip-back">
+          <h4>Internal Risks</h4>
+          <p><strong>Problem:</strong> Employees misusing access.</p>
+          <p><strong>Impact:</strong> Leaks, sabotage.</p>
+          <p><strong>Solution:</strong> Monitoring tools, access control.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="cs-flip-card">
+      <div class="cs-flip-inner">
+        <div class="cs-flip-front">
+          <img src="https://cdn-icons-png.flaticon.com/512/6011/6011479.png" alt="Zero-Day Icon">
+          <h3>Zero-Day</h3>
+        </div>
+        <div class="cs-flip-back">
+          <h4>Unpatched Vulnerability</h4>
+          <p><strong>Problem:</strong> Unknown flaws exploited immediately.</p>
+          <p><strong>Impact:</strong> High risk breaches.</p>
+          <p><strong>Solution:</strong> Threat intelligence, quick patching.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 7 -->
+<div class="cs-flip-card">
+  <div class="cs-flip-inner">
+    <div class="cs-flip-front">
+      <img src="https://cdn-icons-png.flaticon.com/512/7547/7547439.png" alt="Man-in-the-Middle Icon">
+      <h3>MitM Attacks</h3>
+    </div>
+    <div class="cs-flip-back">
+      <h4>Interception Threat</h4>
+      <p><strong>Problem:</strong> Attackers intercept communication between parties.</p>
+      <p><strong>Impact:</strong> Data theft, session hijacking.</p>
+      <p><strong>Solution:</strong> Use of VPNs, encrypted protocols.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 8 -->
+<div class="cs-flip-card">
+  <div class="cs-flip-inner">
+    <div class="cs-flip-front">
+      <img src="https://cdn-icons-png.flaticon.com/512/10390/10390390.png" alt="Social Engineering Icon">
+      <h3>Social Engineering</h3>
+    </div>
+    <div class="cs-flip-back">
+      <h4>Human Manipulation</h4>
+      <p><strong>Problem:</strong> Exploiting human behavior to bypass security.</p>
+      <p><strong>Impact:</strong> Unauthorized access, data leaks.</p>
+      <p><strong>Solution:</strong> Training, verification protocols.</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- real -time threat section -->
+<section class="threat-insight-dashboard">
+  <h2 class="tid-heading">Live Cybersecurity Insights</h2>
+  <div class="tid-grid">
+    <div class="tid-card">
+      <div class="tid-live-dot"></div>
+      <h3 class="tid-number" data-count="1284">0</h3>
+      <p class="tid-label">Threats Detected Today</p>
+    </div>
+    <div class="tid-card">
+      <div class="tid-live-dot"></div>
+      <h3 class="tid-number" data-count="542">0</h3>
+      <p class="tid-label">Attacks Blocked</p>
+    </div>
+    <div class="tid-card">
+      <div class="tid-live-dot"></div>
+      <h3 class="tid-number" data-count="97">0</h3>
+      <p class="tid-label">Active Monitoring Events</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- cyber testimonals -->
+<div class="cs-testimonial-container">
+  <div class="cs-testimonial">
+    <div class="quote-icon">❝</div>
+    <p>"BTsys transformed our cybersecurity posture. We went from frequent phishing issues to zero incidents in under 3 months. Their expert team is proactive and responsive."</p>
+    <h5>— Sarah Jenkins, CTO at ZevoCorp</h5>
+  </div>
+
+  <div class="cs-testimonial">
+    <div class="quote-icon">❝</div>
+    <p>"Their deep knowledge in compliance and data protection helped us pass crucial audits smoothly. We now feel confident in our security stack."</p>
+    <h5>— Mike Rogers, Operations Lead at DataSecure</h5>
+  </div>
+
+  <div class="cs-testimonial">
+    <div class="quote-icon">❝</div>
+    <p>"From planning to deployment, BTsys was a game-changer. Their personalized service and 24/7 support made all the difference for our growing business."</p>
+    <h5>— Emily Tran, Founder of NetNova</h5>
+  </div>
+</div>
+
+
+
+
+
+<!-- cta button cyber page -->
+<div class="cs-cta">
+  <h3>Let's Fortify Your Digital Future</h3>
+  <p>Schedule a free consultation with our security experts and discover your custom cybersecurity blueprint.</p>
+  <button class="cta-button">Book a Call</button>
+</div>
+
+
+<!-- faqs section -->
+<section class="bt-faq-section">
+  <div class="bt-faq-wrapper">
+    <h2 class="bt-faq-title">Frequently Asked Questions</h2>
+    <div class="bt-faq-list" id="bt-faq-list">
+      <!-- Dynamic FAQs will be injected here -->
+    </div>
+  </div>
+</section>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+   
+
+<section class="health-main">
+
+  <!-- hero div health -->
+   <div class="hero-simple">
+  <div class="hero-bg-shapes">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Health & Safety Compliance</h1>
+    <p class="hero-desc">Proactive, people-first solutions tailored to protect your workplace.</p>
+    <a href="#book" class="hero-button">📋 Book a Free Compliance Review</a>
+  </div>
+  </div>
+
+
+
+<!-- Insight Section -->
+<section class="insight-section">
+  <div class="insight-cards-container">
+    
+    <!-- Insight Card 1 -->
+    <div class="insight-card">
+      <div class="insight-icon insight-icon--blue">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h3 class="insight-metric">85%</h3>
+      <p class="insight-description">of workplace accidents are preventable with proper compliance</p>
+    </div>
+
+    <!-- Insight Card 2 -->
+    <div class="insight-card">
+      <div class="insight-icon insight-icon--green">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h3 class="insight-metric">100%</h3>
+      <p class="insight-description">UK/EU legal safety standards covered</p>
+    </div>
+
+    <!-- Insight Card 3 -->
+    <div class="insight-card">
+      <div class="insight-icon insight-icon--red">
+        <i class="fas fa-headset"></i>
+      </div>
+      <h3 class="insight-metric">24/7</h3>
+      <p class="insight-description">Live support & emergency response advisory</p>
+    </div>
+
+    <!-- Insight Card 4 -->
+    <div class="insight-card">
+      <div class="insight-icon insight-icon--orange">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <h3 class="insight-metric">+50</h3>
+      <p class="insight-description">Industries covered with tailor-fit H&S strategies</p>
+    </div>
+
+    <!-- Insight Card 5 -->
+    <div class="insight-card">
+      <div class="insight-icon insight-icon--purple">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <h3 class="insight-metric">FREE</h3>
+      <p class="insight-description">Initial site audit with actionable compliance report</p>
+    </div>
+
+    <!-- Insight Card 6 -->
+    <div class="insight-card">
+      <div class="insight-icon insight-icon--gold">
+        <i class="fas fa-lightbulb"></i>
+      </div>
+      <h3 class="insight-metric">Innovative</h3>
+      <p class="insight-description">Continuous improvement in compliance strategies</p>
+    </div>
+
+  </div>
+
+  <div class="cta-container">
+    <button class="cta-button">Get Your Free Consultation</button>
+  </div>
+</section>
+
+
+
+
+<section class="health-insight-section">
+  <div class="health-insight-container">
+
+    <!-- Progress Card -->
+    <div class="health-card health-progress">
+      <h3>Workplace Health Compliance</h3>
+      <p>Ensure your workplace follows best practices with our tailored strategies.</p>
+
+      <div class="progress-info">
+        <span>Employee Health Monitoring Compliance</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%"></div>
+        </div>
+        <span class="progress-percent">75% Completed</span>
+      </div>
+    </div>
+
+    <!-- Callout Card -->
+    <div class="health-card health-callout">
+      <h3>Did You Know?</h3>
+      <p>Proper health practices can reduce injuries by <span class="highlight">50%</span> and boost employee productivity.</p>
+      <button class="cta-button" onclick="openModal()">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="health-modal" id="healthModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h2>Workplace Health Insights</h2>
+      <p>Implementing workplace health strategies can improve safety, reduce absenteeism, and drive productivity.</p>
+      <ul>
+        <li><strong>50%</strong> reduction in workplace injuries</li>
+        <li><strong>Enhanced</strong> employee satisfaction</li>
+        <li><strong>Increased</strong> compliance with health standards</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+<section class="compliance-radar-section">
+  <div class="radar-header">
+    <h2>Live Compliance Radar</h2>
+    <p>Track your live workplace compliance metrics across health and safety checkpoints.</p>
+  </div>
+
+  <div class="radar-grid">
+    <div class="radar-item radar-green">
+      <i class="fas fa-check-circle radar-icon"></i>
+      <h4>Fire Safety</h4>
+      <p>Status: Compliant</p>
+    </div>
+    <div class="radar-item radar-yellow">
+      <i class="fas fa-exclamation-triangle radar-icon"></i>
+      <h4>Protective Equipment</h4>
+      <p>Status: Review Needed</p>
+    </div>
+    <div class="radar-item radar-red">
+      <i class="fas fa-times-circle radar-icon"></i>
+      <h4>Air Quality</h4>
+      <p>Status: Non-Compliant</p>
+    </div>
+    <div class="radar-item radar-green">
+      <i class="fas fa-user-nurse radar-icon"></i>
+      <h4>On-site Medical</h4>
+      <p>Status: Compliant</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- health knowledge -->
+<section class="health-knowledge-hub">
+  <h2 class="hub-title">Workplace Health & Safety Knowledge Hub</h2>
+  <p class="hub-description">Explore essential health compliance topics and discover strategies to enhance workplace health and safety standards.</p>
+
+  <div class="health-zones">
+    <div class="health-zone" onclick="toggleText('airQuality')">
+      <i class="fas fa-wind animated-icon"></i>
+      <h3>Air Quality Compliance</h3>
+      <p class="zone-description">Ensuring proper ventilation and air circulation.</p>
+      <div class="zone-details" id="airQuality">
+        <p>Improper air quality can lead to respiratory issues and affect employee well-being. Ensure CO2 levels are regulated and that your office is well-ventilated.</p>
+        <ul>
+          <li><strong>Recommended Action:</strong> Regular air quality checks.</li>
+          <li><strong>Best Practices:</strong> Install CO2 monitors and ensure HVAC systems are working properly.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="health-zone" onclick="toggleText('ergonomics')">
+      <i class="fas fa-chair animated-icon"></i>
+      <h3>Ergonomics Compliance</h3>
+      <p class="zone-description">Creating comfortable and safe workspaces to avoid injuries.</p>
+      <div class="zone-details" id="ergonomics">
+        <p>Ensuring employees use ergonomically designed furniture can prevent long-term health problems such as back pain, wrist strain, etc.</p>
+        <ul>
+          <li><strong>Recommended Action:</strong> Provide ergonomic desks and chairs.</li>
+          <li><strong>Best Practices:</strong> Educate employees on proper posture and workstation setup.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="health-zone" onclick="toggleText('noiseLevels')">
+      <i class="fas fa-volume-up animated-icon"></i>
+      <h3>Noise Levels Compliance</h3>
+      <p class="zone-description">Maintaining safe noise levels to prevent hearing loss.</p>
+      <div class="zone-details" id="noiseLevels">
+        <p>Excessive noise in the workplace can lead to hearing loss or increased stress levels. It’s crucial to monitor sound levels regularly.</p>
+        <ul>
+          <li><strong>Recommended Action:</strong> Use soundproofing materials.</li>
+          <li><strong>Best Practices:</strong> Issue hearing protection and monitor noise levels regularly.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="health-section">
+  <div class="container">
+
+    <!-- Left Side: Text Section -->
+    <div class="health-text">
+      <h2 class="health-heading">Ensuring Workplace Health Compliance</h2>
+      <p class="health-description">Your workplace’s health and safety are our top priority. Learn how we help businesses meet the highest standards in employee wellness, compliance, and productivity.</p>
+
+      <div class="cta-buttons">
+        <button class="cta-btn">Get Started</button>
+        <button class="cta-btn">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Right Side: Image Section -->
+    <div class="health-image">
+      <img src="https://cdn.asp.events/CLIENT_National_94CD7084_9154_9CB9_2FE12E9BCD858CAF/sites/workplace/media/libraries/whs-blog/Skytrust_blog.jpg/fit-in/1200x630/filters:no_upscale()" alt="Workplace Health">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- health feature section -->
+<section class="health-feature-section">
+  <div class="health-feature-wrapper">
+
+    <!-- Left: Image -->
+    <div class="health-image">
+      <img src="https://saferack.com/wp-content/uploads/2025/02/shutterstock_1008563635-1-scaled-1-1024x682.jpg" alt="Health Compliance Visual">
+    </div>
+
+    <!-- Right: Content -->
+    <div class="health-content">
+      <h2 class="health-heading">Elevate Workplace Health Standards</h2>
+      <p class="health-intro">
+        Discover how proactive health strategies can transform your work environment. Promote safety, boost morale, and enhance compliance across all levels.
+      </p>
+
+      <div class="health-points">
+        <div class="point">
+          <i class="fas fa-check-circle"></i>
+          <p><strong>Up to 50%</strong> fewer health incidents in compliant workplaces</p>
+        </div>
+        <div class="point">
+          <i class="fas fa-check-circle"></i>
+          <p><strong>30% productivity boost</strong> with wellness initiatives</p>
+        </div>
+        <div class="point">
+          <i class="fas fa-check-circle"></i>
+          <p><strong>Real-time monitoring</strong> for proactive health interventions</p>
+        </div>
+      </div>
+
+      <div class="health-cta">
+        <button class="btn-primary">Get Your Compliance Audit</button>
+        <button class="btn-secondary">Learn More</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+  
+
+<!-- testimonial section -->
+<section class="client-feedback-showcase">
+  <h2 class="client-feedback-heading">Voices of Trust</h2>
+
+  <div class="feedback-cards-container">
+    <div class="feedback-card">
+      <p class="feedback-text">“Since implementing their health compliance plan, we've seen a 40% drop in incidents. The peace of mind is priceless.”</p>
+      <div class="feedback-meta">– James Doyle, Site Manager</div>
+    </div>
+
+    <div class="feedback-card">
+      <p class="feedback-text">“Their insights and reporting tools gave us total control over safety in ways we never imagined possible.”</p>
+      <div class="feedback-meta">– Priya Sharma, HR Executive</div>
+    </div>
+
+    <div class="feedback-card">
+      <p class="feedback-text">“The proactive health tracking system helped us avoid potential violations before they became problems.”</p>
+      <div class="feedback-meta">– Ahmed Khan, Compliance Officer</div>
+    </div>
+
+    <div class="feedback-card">
+      <p class="feedback-text">“They didn’t just sell a service — they became part of our safety culture. Highly recommend.”</p>
+      <div class="feedback-meta">– Laura Chen, Operations Lead</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--  -->
+<section class="impact-section">
+  <div class="impact-container">
+    <h3 class="impact-heading">Health & Safety isn’t just policy — it’s protection, productivity, and peace of mind.</h3>
+    <p class="impact-description">Join 250+ companies who’ve transformed their workplace culture with our expert compliance solutions. Start today and build a safer, more productive workplace.</p>
+    <button class="impact-cta-btn">Get Started Today</button>
+  </div>
+</section>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="business-main">
+<!--hero business section  -->
+<section class="cs-hero">
+  <div class="animated-background"></div>
+  <div class="cs-hero-content">
+    <h1 class="cs-title">
+      <span class="highlighted-text">Business Consultancy</span><br />
+      Built for Future Leaders
+    </h1>
+    <p class="cs-subtitle">
+      Strategic growth. Smarter decisions. Stronger businesses.  
+      Let’s take your brand to the next level.
+    </p>
+    <div class="cs-buttons">
+      <button class="btn-primary">Start Your Journey</button>
+      <button class="btn-outline">Discover More</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- business cards -->
+<section class="business-consultancy-section">
+  <h2 class="consultancy-heading">Business Consultancy Services</h2>
+
+  <div class="consultancy-cards">
+
+    <!-- Card 1 -->
+    <div class="consultancy-card">
+      <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+      <h3 class="card-title">Strategic Planning</h3>
+      <p>Empowering businesses through detailed strategy, roadmap creation, and goal-based execution plans.</p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="consultancy-card">
+      <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+      <h3 class="card-title">Operations Management</h3>
+      <p>Streamlining operations to boost efficiency, reduce waste, and maximize overall organizational output.</p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="consultancy-card">
+      <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+      <h3 class="card-title">Market Analysis</h3>
+      <p>Data-driven insights to help you identify opportunities and understand consumer behavior in depth.</p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="consultancy-card">
+      <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+      <h3 class="card-title">Leadership Coaching</h3>
+      <p>Shaping top-level executives with leadership skills, emotional intelligence, and confident decision-making.</p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="consultancy-card">
+      <div class="card-icon"><i class="fas fa-comments"></i></div>
+      <h3 class="card-title">Client Communication</h3>
+      <p>Helping you build strong client relationships with effective, empathetic, and proactive communication methods.</p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="consultancy-card">
+      <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3 class="card-title">Innovation Consulting</h3>
+      <p>Fueling your brand’s growth by sparking innovation and encouraging sustainable change through creative thinking.</p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!--service matcher section  -->
+<section class="service-matcher-section">
+  <div class="service-matcher-container">
+    <h2 class="matcher-heading">Find the Perfect Service for Your Business</h2>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="strategy">Strategy</button>
+      <button class="filter-btn" data-category="finance">Finance</button>
+      <button class="filter-btn" data-category="growth">Growth</button>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-category="strategy">
+        <h3>Market Strategy</h3>
+        <p>Tailored strategies to grow your presence and impact.</p>
+      </div>
+      <div class="service-card" data-category="finance">
+        <h3>Financial Planning</h3>
+        <p>Professional support for sustainable financial health.</p>
+      </div>
+      <div class="service-card" data-category="growth">
+        <h3>Growth Hacking</h3>
+        <p>Innovative methods to scale and acquire new customers fast.</p>
+      </div>
+      <div class="service-card" data-category="strategy">
+        <h3>Brand Positioning</h3>
+        <p>Help your brand stand out in a competitive market.</p>
+      </div>
+      <div class="service-card" data-category="finance">
+        <h3>Risk Management</h3>
+        <p>Minimize business risks with structured advisory.</p>
+      </div>
+      <div class="service-card" data-category="growth">
+        <h3>Digital Expansion</h3>
+        <p>Leverage digital platforms to multiply your reach.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--image text pairing section  -->
+<section class="text-image-pairing">
+  <div class="pairing-container">
+    <div class="pairing-content">
+      <h2 class="section-title">Our Business Solutions</h2>
+      <p class="section-text">We help companies navigate through challenges and emerge stronger. Our expert consultants work with you to create tailored strategies for growth and success.</p>
+    </div>
+    <div class="pairing-image">
+      <img src="https://tweakyourbiz.com/wp-content/uploads/2022/05/Business-Solutions.jpg" alt="Consulting Services" class="image-effect">
+    </div>
+  </div>
+</section>
+
+<section class="text-image-pairing">
+  <div class="pairing-container">
+    <div class="pairing-image">
+      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_456110931_9709539704500220_74714.jpg" alt="Successful Business" class="image-effect">
+    </div>
+    <div class="pairing-content">
+      <h2 class="section-title">Achieving Success Together</h2>
+      <p class="section-text">By leveraging our years of experience and expertise, we offer services that drive measurable results. From strategic planning to operational efficiency, we have the right tools to help you grow.</p>
+    </div>
+   
+  </div>
+</section>
+
+
+
+
+
+
+<!--service flow business  -->
+<section class="service-flow">
+  <div class="service-flow-heading">
+      <h2>Our Business Consultancy Process</h2>
+      <p>Discover how our expert services help you every step of the way.</p>
+  </div>
+  <div class="service-flow-diagram">
+      <div class="service-stage" data-stage="1">
+          <div class="service-icon">📈</div>
+          <p class="stage-title">Analysis</p>
+          <p class="stage-description">We analyze your business needs and goals.</p>
+      </div>
+      <div class="service-stage" data-stage="2">
+          <div class="service-icon">🔍</div>
+          <p class="stage-title">Strategy</p>
+          <p class="stage-description">Developing tailored strategies for growth.</p>
+      </div>
+      <div class="service-stage" data-stage="3">
+          <div class="service-icon">🚀</div>
+          <p class="stage-title">Execution</p>
+          <p class="stage-description">Implementing strategies and tracking progress.</p>
+      </div>
+      <div class="service-stage" data-stage="4">
+          <div class="service-icon">📊</div>
+          <p class="stage-title">Optimization</p>
+          <p class="stage-description">Improving processes and ensuring sustainability.</p>
+      </div>
+  </div>
+</section>
+
+
+
+<!--testimonals business  -->
+<section class="testimonials-section">
+  <div class="testimonials-heading">
+    <h2>What Our Clients Say</h2>
+    <p>Hear from the companies and individuals we've helped achieve success!</p>
+  </div>
+  
+  <div class="testimonials-container">
+    <div class="testimonial-card">
+      <div class="testimonial-content">
+        <p class="testimonial-text">
+          "Working with this consultancy transformed our business! Their insight and strategy led to a 30% growth in just 6 months."
+        </p>
+        <h4 class="testimonial-name">John Doe</h4>
+        <p class="testimonial-company">CEO, Example Corp</p>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-content">
+        <p class="testimonial-text">
+          "A game-changing partnership! We saw measurable improvements in our efficiency and bottom line after collaborating."
+        </p>
+        <h4 class="testimonial-name">Jane Smith</h4>
+        <p class="testimonial-company">Founder, InnovateTech</p>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-content">
+        <p class="testimonial-text">
+          "The advice and strategies provided by this consultancy helped us streamline operations and improve profitability."
+        </p>
+        <h4 class="testimonial-name">Sarah Lee</h4>
+        <p class="testimonial-company">COO, Bright Future Ltd.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+<section class="cta-section">
+  <h2 class="cta-heading">Ready to Take Your Business to the Next Level?</h2>
+  <p class="cta-text">Our team of experts is here to help you achieve your goals. Let's start a conversation!</p>
+  <a href="#contact" class="cta-button">Request a Consultation</a>
+</section>
+
+
+
+<!-- faqs section business -->
+<section class="faq-section">
+  <h2 class="faq-heading">Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">What is Business Consultancy?</button>
+      <div class="faq-answer">
+        <p>Business consultancy refers to the services provided by experts to help businesses improve their operations, solve problems, and achieve goals. Consultants provide strategies, insights, and recommendations tailored to your business.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I start a project with your consultancy?</button>
+      <div class="faq-answer">
+        <p>You can get started by scheduling a free consultation through our website. Once we understand your needs, we will create a customized plan to help your business succeed.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What industries do you specialize in?</button>
+      <div class="faq-answer">
+        <p>Our consultancy specializes in a wide range of industries including finance, healthcare, technology, manufacturing, and more. We tailor our approach to the unique challenges and opportunities within each industry.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How long do consultations typically last?</button>
+      <div class="faq-answer">
+        <p>Consultations generally last between 30 minutes to an hour, depending on the complexity of the discussion. During this time, we gather essential information to create a tailored strategy for your business.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">What are the costs of your services?</button>
+      <div class="faq-answer">
+        <p>Our services are priced based on the scope and complexity of the project. We offer a variety of pricing packages to suit different budgets. Contact us for a personalized quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+
+
+
+
+<!-- get a quote section -->
+<section class="quote-pro-wrapper" id="quote-section">
+  <div class="quote-pro-card">
+    <div class="quote-pro-header">
+      <h2 class="quote-pro-title">Request a Custom Quote</h2>
+      <p class="quote-pro-subtitle">We tailor solutions to your exact needs</p>
+    </div>
+
+    <form id="quoteProForm" class="quote-pro-form">
+      <div class="quote-pro-row">
+        <input type="text" class="quote-pro-input" placeholder="Full Name" required />
+        <input type="email" class="quote-pro-input" placeholder="Email Address" required />
+      </div>
+      <div class="quote-pro-row">
+        <input type="text" class="quote-pro-input" placeholder="Estimated Budget" required />
+        <select class="quote-pro-input" required>
+          <option value="" disabled selected>Select a Service</option>
+          <option>Cyber Security</option>
+          <option>Health & Safety Compliance</option>
+          <option>Business Consultancy</option>
+        </select>
+      </div>
+      <textarea class="quote-pro-textarea" placeholder="Brief Project Description" required></textarea>
+
+      <button type="submit" class="quote-pro-button">
+        <span>Send Quote Request</span>
+        <div class="quote-pro-button-glow"></div>
+      </button>
+    </form>
+  </div>
+  <div class="quote-pro-glow-bg"></div>
+</section>
+
+
+      
+
+
+
+<!-- footer section -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- About / Company Info -->
+      <div class="footer-section fade-in">
+        <h3>About BTSys UK</h3>
+        <p>Empowering businesses across the UK with expert services in Cybersecurity, Health & Safety, and Business Consultancy. We tailor solutions to help companies thrive securely and compliantly.</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section fade-in delay-1">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Services -->
+      <div class="footer-section fade-in delay-2">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#cyber-security">Cyber Security</a></li>
+          <li><a href="#health-safety">Health & Safety</a></li>
+          <li><a href="#business-consultancy">Business Consultancy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-section fade-in delay-3">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone-alt"></i> +44 1234 567890</li>
+          <li><i class="fas fa-envelope"></i> info@btsys.uk</li>
+          <li><i class="fas fa-map-marker-alt"></i> London, United Kingdom</li>
+        </ul>
+      </div>
+  
+      <!-- Newsletter -->
+      <div class="footer-section newsletter fade-in delay-4">
+        <h3>Subscribe</h3>
+        <form>
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 BTSys UK. All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </div>
+  </footer>
+  
+      
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
